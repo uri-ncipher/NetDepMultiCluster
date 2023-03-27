@@ -8,8 +8,9 @@ network edges. Ignoring network dependence can lead to invalid statistical infer
 when the exposure and the outcome variables of interest are network-dependent on the same or similar
 underlying networks, estimates of their association may be spurious, concentrated far from their true
 values. Even though this phenomenon has just recently come to attention, very little is known about
-when spurious associations occur and which factors affect this issue. The purpose of this work is to
-empirically examine the spurious associations problem under different network autocorrelation processes
+when spurious associations occur and which factors affect this issue. 
+
+The purpose of this work is to empirically examine the spurious associations problem under different network autocorrelation processes
 that generate dependence among observations in a social network. We also investigate the impact of
 multiple clusters on the issue. In this work we show empirical evidence demonstrating that spurious
 associations may be more pronounced under particular autocorrelation processes and may depend on
@@ -18,7 +19,6 @@ as the number of independent clusters increases, but only under certain circumst
 guide future social network study designs to avoid spurious associations, particularly when the true
 autocorrelation processes are unknown.
 
-## Data
-The simulated data are in the google drive link 
-
 ## Code for Reproducibility
+
+* first_gene_network.R
