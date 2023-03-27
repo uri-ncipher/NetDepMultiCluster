@@ -18,4 +18,7 @@ as the number of independent clusters increases, but only under certain circumst
 guide future social network study designs to avoid spurious associations, particularly when the true
 autocorrelation processes are unknown.
 
+## Data
+The simulated data are in the google drive link 
+
 ## Code for Reproducibility
