@@ -8,7 +8,7 @@ network edges. Ignoring network dependence can lead to invalid statistical infer
 when the exposure and the outcome variables of interest are network-dependent on the same or similar
 underlying networks, estimates of their association may be spurious, concentrated far from their true
 values. Even though this phenomenon has just recently come to attention, very little is known about
-when spurious associations occur and which factors affect this issue. 
+when spurious associations occur and which factors affect this issue.
 
 The purpose of this work is to empirically examine the spurious associations problem under different network autocorrelation processes
 that generate dependence among observations in a social network. We also investigate the impact of
@@ -21,4 +21,12 @@ autocorrelation processes are unknown.
 
 ## Code for Reproducibility
 
-* <mark >first_gene_network.R </mark>
+* `first_gene_network.R` and `second_gene_network.R` These files generates the network graphs for (i) direct transmission process and (ii) multiple communities formation process.
+
+* `first.direct.R` and `first.uv.R` These files generate the two transmission processes while fixing the total number of nodes to n = 500. The simulation result is presented in the main manuscript.
+
+* `second.direct.R` and `second.uv.R` These files generate the two transmission process while increasing the number of clusters with a fixed cluster size to 100 for each cluster. The simulation result is presented in the Appendix
+
+* `Summary_results.R` This file calculates the correlation coefficients, distance correlations, standard beta coefficients, the p-values for the linear test and the distance correlation t-test and the rejection rates for the two test statistics. This file can be used to reproduce the Table 1 in the main manuscript and Table A1 in the Supporting information.
+
+* `plot.R` This files is used generate the figures presented in the manuscript and in the Appendix. This script can be used to reproduce the Figure 1-5 in the manuscript and Figure A1-A7 in the Appendix. To reproduce these figures, one should first run the `Summary_results.R`.
