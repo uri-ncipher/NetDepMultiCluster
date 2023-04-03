@@ -1,5 +1,5 @@
 # Network dependence with multiple clusters: a simulation study across different autocorrelation processes
-Youjin Lee, Zhejia Dong and Ashley Buchanan
+Youjin Lee, Zhejia Dong, Natallia V.~Katenka, Jing Wu, and Ashley L.~Buchanan
 
 ## Overview
 Network dependence – statistical dependence within a variable due to network edges – is ubiquitous
