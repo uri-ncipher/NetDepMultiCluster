@@ -25,8 +25,8 @@ autocorrelation processes are unknown.
 
 * `first.direct.R` and `first.uv.R` These files generate the two transmission processes while fixing the total number of nodes to n = 500. The simulation result is presented in the main manuscript.
 
-* `second.direct.R` and `second.uv.R` These files generate the two transmission process while increasing the number of clusters with a fixed cluster size to 100 for each cluster. The simulation result is presented in the Appendix
+* `second.direct.R` and `second.uv.R` These files generate the two transmission processes while increasing the number of clusters with a fixed cluster size to 100 for each cluster. The simulation result is presented in the Appendix
 
-* `Summary_results.R` This file calculates the correlation coefficients, distance correlations, standard beta coefficients, the p-values for the linear test and the distance correlation t-test and the rejection rates for the two test statistics. This file can be used to reproduce the Table 1 in the main manuscript and Table A1 in the Supporting information.
+* `Summary_results.R` This file calculates the correlation coefficients, distance correlations, standard beta coefficients, the p-values for the linear test and the distance correlation t-test and the rejection rates for the two test statistics. This file can be used to reproduce Table 1 in the main manuscript and Table A1 in the Supporting information.
 
-* `plot.R` This files is used generate the figures presented in the manuscript and in the Appendix. This script can be used to reproduce the Figure 1-5 in the manuscript and Figure A1-A7 in the Appendix. To reproduce these figures, one should first run the `Summary_results.R`.
+* `plot.R` This file is used to generate the figures presented in the manuscript and in the Appendix. This script can be used to reproduce Figures 1-5 in the manuscript and Figures A1-A7 in the Appendix. To reproduce these figures, one should first run the `Summary_results.R`.
