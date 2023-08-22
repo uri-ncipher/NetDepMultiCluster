@@ -12,18 +12,22 @@ when spurious associations occur and which factors affect this issue.
 
 The purpose of this work is to empirically examine the spurious associations problem under different network autocorrelation processes
 that generate dependence among observations in a social network. We also investigate the impact of
-multiple clusters on the issue. In this work we show empirical evidence demonstrating that spurious
+multiple clusters on the issue. In this work, we show empirical evidence demonstrating that spurious
 associations may be more pronounced under particular autocorrelation processes and may depend on
 the association measure used. We also find that the problem of spurious associations can be mitigated
 as the number of independent clusters increases, but only under certain circumstances. This work can
 guide future social network study designs to avoid spurious associations, particularly when the true
 autocorrelation processes are unknown.
 
+## Data
+
+We provide the sample data `Data/first_network.RData`, which has the same network structure as in the main text (fixed sample size to 500 while varying the number of clusters); and the sample data `Data/second_network.RData`, which has the same network structure as in the Appendix (fixed cluster size with an increasing sample size). These data are generated at random and are only meant to be used as examples.
+
 ## Code for Reproducibility
 
-* `first_gene_network.R` and `second_gene_network.R` These files generates the network graphs for (i) direct transmission process and (ii) multiple communities formation process.
+* `first_gene_network.R` and `second_gene_network.R` These files generates the network graphs for (i) the direct transmission process and (ii) the multiple communities formation process.
 
-* `first.direct.R` and `first.uv.R` These files generate the two transmission processes while fixing the total number of nodes to n = 500. The simulation result is presented in the main manuscript.
+* `first.direct.R` and `first.uv.R` These files generate the two transmission processes while fixing the total number of nodes to n = 500. The simulation result is presented in the main text.
 
 * `second.direct.R` and `second.uv.R` These files generate the two transmission processes while increasing the number of clusters with a fixed cluster size to 100 for each cluster. The simulation result is presented in the Appendix
 
