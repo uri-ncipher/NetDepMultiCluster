@@ -21,7 +21,13 @@ autocorrelation processes are unknown.
 
 ## Data
 
-We provide the sample data `Data/first_network.RData`, which has the same network structure as in the main text (fixed sample size to 500 while varying the number of clusters); and the sample data `Data/second_network.RData`, which has the same network structure as in the Appendix (fixed cluster size with an increasing sample size). These data are generated at random and are only meant to be used as examples.
+We provide two sample data:
+
+* `Data/first_network.RData`  This data has the same network structure as in the main text (fixed sample size to 500 while varying the number of clusters).
+  
+* `Data/second_network.RData` This data has the same network structure as in the Appendix (fixed cluster size with increasing sample size).
+
+These data are generated at random and are only meant to be used as examples.
 
 ## Code for Reproducibility
 
