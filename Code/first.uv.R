@@ -8,10 +8,12 @@ n.sim <- 500
 popn <- 500
 max.time <- 1
 n.max.cluster <- 10
-miss.prob <- 0.7 # add missing edges, 0.8, 20%missing
+miss.prob <- 0.7 # add missing edges, 0.7, 30%missing
 epsilon <- 0.1 # add normal random error in updates.
 
-new.adjacency <- function(Adj,miss.prob=0.8){
+### random  remove 30% edges for a given adjacency matrix
+
+new.adjacency <- function(Adj,miss.prob=miss.prob){
   new.Adj <- Adj
   popn <- nrow(Adj)
   for(i in 1 : popn){

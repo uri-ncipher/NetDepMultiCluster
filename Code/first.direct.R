@@ -8,9 +8,11 @@ n.sim <- 500
 popn <- 500
 max.time <- 10
 n.max.cluster <- 10
-miss.prob <- 0.8
+miss.prob <- 0.7
 
-new.adjacency <- function(Adj,miss.prob=0.8){
+
+### random  remove 30% edges for a given adjacency matrix
+new.adjacency <- function(Adj,miss.prob=miss.prob){
   new.Adj <- Adj
   popn <- nrow(Adj)
   for(i in 1 : popn){

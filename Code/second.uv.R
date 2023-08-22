@@ -7,8 +7,9 @@ load("/Data/second.graphds.RData")
 
 n.sim <- 500
 max.time <- 1
-miss.prob <- 0.8
+miss.prob <- 0.7
 
+### random  remove 30% edges for a given adjacency matrix
 new.adjacency <- function(Adj,miss.prob=miss.prob){
   new.Adj <- Adj
   popn <- nrow(Adj)

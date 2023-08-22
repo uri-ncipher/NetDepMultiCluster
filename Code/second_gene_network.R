@@ -32,18 +32,4 @@ for(i in 1:n.max.cluster){
   }
 }
 
-### random  remove 30% edges for a given adjacency matrix
-new.adjacency <- function(Adj, miss.prob=0.7){
-  new.Adj <- Adj
-  popn <- nrow(Adj)
-  for(i in 1 : popn){
-    for(j in 1 : popn){
-      new.Adj[i,j] <- ifelse(Adj[i,j] == 1, rbinom(1,1,miss.prob), Adj[i,j])
-    } 
-    for(j in 1: i){
-      new.Adj[i,j] = new.Adj[j,i]
-    }
-  }
-  return(new.Adj)
-}
 
